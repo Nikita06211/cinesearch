@@ -9,7 +9,7 @@ export default function Hero() {
       <h2 className="text-3xl sm:text-4xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
         Discover Amazing Movies
       </h2>
-      <p className="text-lg max-w-xl mx-auto mb-6 text-gray-700 dark:text-gray-600">
+      <p className="text-lg max-w-xl mx-auto mb-6 text-gray-500 dark:text-gray-500">
         Search through thousands of movies and explore detailed information about
         your favorites.
       </p>

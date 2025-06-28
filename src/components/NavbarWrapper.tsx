@@ -2,10 +2,11 @@
 
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
+import { useSearch } from "@/context/SearchContext";
 
 export default function NavbarWrapper() {
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const [submittedSearch, setSubmittedSearch] = useState("");
+  const onSearch = useSearch();
 
   const toggleTheme = () => {
     setIsDarkMode((prev) => !prev);
@@ -14,7 +15,7 @@ export default function NavbarWrapper() {
 
   return (
     <Navbar
-      onSearch={setSubmittedSearch}
+      onSearch={onSearch}
       isDarkMode={isDarkMode}
       toggleTheme={toggleTheme}
     />
